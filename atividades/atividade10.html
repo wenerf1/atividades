@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria Sr. Joaquim</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function calcularEExibirTabela() {
+            // Solicita a quantidade de pães ao usuário
+            var quantidade = parseInt(prompt("Quantos pães você deseja comprar?"), 10);
+
+            // Verifica se a entrada é um número válido
+            if (isNaN(quantidade) || quantidade <= 0) {
+                alert("Por favor, digite um número válido de pães.");
+                return;
+            }
+
+            // Define os preços e a condição de promoção
+            var precoNormal = 1.00;
+            var precoPromocional = 0.80;
+            var promocao;
+            var precoUnitario;
+            var valorTotal;
+
+            if (quantidade > 15) {
+                precoUnitario = precoPromocional;
+                promocao = "Aplicar desconto";
+            } else {
+                precoUnitario = precoNormal;
+                promocao = "Fora do critério";
+            }
+
+            valorTotal = precoUnitario * quantidade;
+
+            // Cria e insere a tabela HTML na página
+            var resultadoDiv = document.createElement('div');
+            resultadoDiv.innerHTML = `
+                <h2>Padaria Sr. Joaquim</h2>
+                <table>
+                    <tr>
+                        <th>Quantidade de pães:</th>
+                        <td>${quantidade}</td>
+                    </tr>
+                    <tr>
+                        <th>Promoção da padaria:</th>
+                        <td>${promocao}</td>
+                    </tr>
+                    <tr>
+                        <th>Valor unitário:</th>
+                        <td>R$ ${precoUnitario.toFixed(2)}</td>
+                    </tr>
+                    <tr>
+                        <th>Valor à pagar:</th>
+                        <td>R$ ${valorTotal.toFixed(2)}</td>
+                    </tr>
+                </table>
+            `;
+            document.body.appendChild(resultadoDiv);
+        }
+
+        // Executa a função ao carregar a página
+        calcularEExibirTabela();
+    </script>
+</body>
+</html>

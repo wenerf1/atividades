@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <style>
+        #container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+       
+        
+
+
+
+        #relogio1 {
+           display: flex;
+            font-size: 50px;
+            font-weight: bold;
+
+        }
+
+        #relogio2 {
+            display: flex;
+            margin-left: 80px;
+            font-size: 50px;
+            font-weight: bold;
+            border: 1px solid black;
+            width: 200px;
+            border-radius: 20px;
+            text-align: right;
+
+
+        }
+
+        #relogio3 {
+            display: flex;
+            margin-left: 80px;
+            font-size: 50px;
+            font-weight: bold;
+            border: 1px solid black;
+            width: 500px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        #horas3 {
+            
+            margin-left: 80px;
+            font-size: 50px;
+            font-weight: bold;
+            border: 1px solid black;
+            width: 60px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        #minutos3 {
+    
+            margin-left: 80px;
+            font-size: 50px;
+            font-weight: bold;
+            border: 1px solid black;
+            width: 60px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        #segundos3 {
+            
+            margin-left: 80px;
+            font-size: 50px;
+            font-weight: bold;
+            border: 1px solid black;
+            width: 60px;
+            border-radius: 20px;
+            text-align: center;
+        }
+    </style>
+
+    <div id="container">
+
+        <!-- divs relogio 01 -->
+        <div id="relogio1">
+            <div id="horas1"> :</div>
+            <span id="separador1"> : </span>
+
+            <div id="minutos1"> </div>
+            <span id="separador1"> : </span>
+
+            <div id="segundos1"> </div>
+
+        </div>
+
+        <!-- divs relogio 02 -->
+        <div id="relogio2">
+            <div id="horas2"> :</div>
+            <span id="separador2"> : </span>
+
+            <div id="minutos2"> </div>
+            <span id="separador2"> : </span>
+
+            <div id="segundos2"> </div>
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+    <div id="container2">
+
+        <!-- divs relogio 03 -->
+        <div id="relogio3">
+            <div id="horas3"> :</div>
+            <span id="separador3"> : </span>
+
+            <div id="minutos3"> </div>
+            <span id="separador3"> : </span>
+
+            <div id="segundos3"> </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <script>
+
+        //   script relogio 01 
+        const horas1 = document.getElementById('horas1');
+        const minutos1 = document.getElementById('minutos1');
+        const segundos1 = document.getElementById('segundos1');
+
+        // Aplicando o intervalo para o relogio funcionar
+        const relogio1 = setInterval(function time1() {
+
+            let tempo1 = new Date();
+            let h1 = tempo1.getHours();
+            let m1 = tempo1.getMinutes();
+            let s1 = tempo1.getSeconds();
+
+            if (h1 < 10) h1 = '0' + h1;
+            if (m1 < 10) m1 = '0' + m1;
+            if (s1 < 10) s1 = '0' + s1;
+
+
+            horas1.textContent = h1;
+            minutos1.textContent = m1;
+            segundos1.textContent = s1;
+
+
+        });
+
+        //   script relogio 02 
+        const horas2 = document.getElementById('horas2');
+        const minutos2 = document.getElementById('minutos2');
+        const segundos2 = document.getElementById('segundos2');
+
+        // Aplicando o intervalo para o relogio funcionar
+        const relogio2 = setInterval(function time2() {
+
+            let tempo2 = new Date();
+            let h2 = tempo2.getHours();
+            let m2 = tempo2.getMinutes();
+            let s2 = tempo2.getSeconds();
+
+            if (h2 < 10) h2 = '0' + h2;
+            if (m2 < 10) m2 = '0' + m2;
+            if (s2 < 10) s2 = '0' + s2;
+
+
+            horas2.textContent = h2;
+            minutos2.textContent = m2;
+            segundos2.textContent = s2;
+
+
+        });
+
+        //   script relogio 03
+
+        const horas3 = document.getElementById('horas3');
+        const minutos3 = document.getElementById('minutos3');
+        const segundos3 = document.getElementById('segundos3');
+
+        // Aplicando o intervalo para o relogio funcionar
+        const relogio3 = setInterval(function time3() {
+
+            let tempo3 = new Date();
+            let h3 = tempo3.getHours();
+            let m3 = tempo3.getMinutes();
+            let s3 = tempo3.getSeconds();
+
+            if (h3 < 10) h3 = '0' + h3;
+            if (m3 < 10) m3 = '0' + m3;
+            if (s3 < 10) s3 = '0' + s3;
+
+
+            horas3.textContent = h3;
+            minutos3.textContent = m3;
+            segundos3.textContent = s3;
+
+
+        });
+
+
+
+    </script>
+
+
+    <!-- relogio 02 -->

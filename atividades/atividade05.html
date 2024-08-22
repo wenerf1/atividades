@@ -1,0 +1,27 @@
+<script>
+
+    let nome = prompt('Digite o nome do funcionário');
+    console.log(nome);
+
+    let salario = parseFloat (prompt('Digite o salário'));
+    console.log(salario);
+
+    let aumento = parseFloat (prompt('Digite a porcentagem de aumento'));
+    console.log(aumento);
+
+    let valorDoAumento = salario / 100 * aumento
+    console.log = valorDoAumento
+
+    document.write('<b> Funcionário: </b>', nome, '<br>')
+    document.write('<b> Salário: </b>', salario, '<br>')
+    document.write('<b> Aumento: </b>', aumento, '<br>')
+    document.write('<b> Valor do aumento </b>', valorDoAumento, '<br>')
+    document.write('<b> Novo Salário </b>', (salario + valorDoAumento))
+
+
+
+
+
+
+
+</script>

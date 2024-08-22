@@ -1,0 +1,26 @@
+<script>
+
+    document.write(' <font color=blue><b> Boletim Escolar </font></b><br><br>');
+
+    let nome = prompt('Digite o nome do aluno');
+    console.log(nome);
+
+    let portugues = parseFloat(prompt('Digite a nota em português'));
+    console.log(portugues);
+
+    let matematica = parseFloat(prompt('Digite a nota em Matemática'));
+    console.log(matematica);
+
+    let ciencias = parseFloat (prompt('Digite a nota em Ciências'));
+    console.log(ciencias);
+
+    
+
+document.write('<b> Aluno: </b>' , nome , '<br>');
+document.write('<b> Português: </b>' , portugues , '<br>');
+document.write('<b> Matemática: </b>' , matematica , '<br>');
+document.write('<b> Ciências: </b>' , ciencias , '<br>');
+document.write('<b> Média: </b>'  ,(portugues + matematica + ciencias ) /3 );
+
+
+</script>

@@ -1,0 +1,25 @@
+<script>
+    //funcao para chamar a imagem que esta acesa
+       function ligar(){
+           document.getElementById("lampada").src = "lampadas/ligada.png";
+       }
+    
+       // funcao para chamar a imagem que esta apagada
+       function desligar(){
+           document.getElementById("lampada").src="lampadas/desligadaa.png";
+       }
+    
+   </script>
+   <h3>Ligar/Desligar a lâmpada</h3>
+   <!-- criando uma div coma imagem apagada, senao vai iniciar sem imagem nenhuma -->
+   <img id="lampada" src="lampadas/ligada.png">
+   <br>
+    
+   <!-- on click, ao clicar vai chamar a função ligar que esta chamando a imagem ligada-->
+   <input onclick="ligar()" type="radio" name="lampada">Ligar
+   <br>
+    
+   <!-- ao clicar vai chamar a funcao deslicar que por sua vez esta chamando a imagem desligada-->
+   <input onclick="desligar()" type="radio" name="lampada">Desligar
+    
+   <!-- teste e se n"ao der certo use o console-->

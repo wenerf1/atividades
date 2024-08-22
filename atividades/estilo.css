@@ -1,0 +1,51 @@
+body{
+    background: #272726 url(https://i.pinimg.com/736x/bd/11/63/bd11631dd1ee4548a61b10105b7eee9d.jpg);
+    font: 16px arial, helvetica, sans-serif;
+}
+
+#principal{
+    width: 900px;
+    align-items: center;
+    margin: 0 auto; 
+}
+
+#atividades {
+    background:#e2d89d;
+    padding: 25px;
+}
+
+#conteudo {
+    background: #f3f2f5;
+    padding: 15px;
+    text-align: justify;
+}
+
+h1 {
+    color: #661542;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+#rodape {
+    text-align: center;
+    color: aliceblue;
+}
+
+a {
+    color: #0f3fa7;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #dd423e;
+}
+
+.Divisoria {
+    border: 10;
+    height: 10px;
+    background:#272726;
+    margin: 20px 0;
+}

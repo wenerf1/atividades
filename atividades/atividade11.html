@@ -1,0 +1,154 @@
+<script>
+
+
+let p1 = prompt('01- Onde Ronaldinho Gaucho nasceu? \n 1- São Paulo \n 2- Rio De Janeiro \n 3- Porto Alegre \n 4- Salvador \n \n  Cada pergunta vale 1 ponto');
+
+let resposta01 = 0;
+let resposta02 = 0;
+let resposta03 = 0;
+let resposta04 = 0;
+let resposta05 = 0;
+
+let p2 = prompt('02- Quem descobriu o Brasil? \n 1- Lula \n 2- Pedro Alvares Cabral \n 3- Tarcila do Amaral \n 4- Cazuza \n \n  Cada pergunta vale 1 ponto');
+
+let p3 = prompt('03- Quantos ossos temos no corpo? \n 1- 126 \n 2- 206 \n 3- 18 \n 4- 200 \n \n  Cada pergunta vale 1 ponto');
+
+let p4 = prompt('04- Quantos continentes existem? \n 1- 2 \n 2- 8 \n 3- 4 \n 4- 6 \n \n  Cada pergunta vale 1 ponto');
+
+let p5 = prompt('05- O que os pandas comem? \n 1- Bambu \n 2- Frutas e mel \n 3- ovos e peixes \n 4- Carnes \n \n  Cada pergunta vale 1 ponto');
+
+if (isNaN(p1) || p1 < 1 || p1 > 4) {
+    console.log('Resposta invalida')
+    alert('Você não digitou nenhum número entre 1 e 4')
+}
+
+switch (p1) {
+
+    case '1':
+        console.log('<b>Pergunta 01: Errado</b>');
+        document.write('<b>Pergunta 01: Errado</b><br>')
+        resposta01 = 0;
+        break;
+
+        case '2':
+        console.log('<b>Pergunta 01: Errado</b>');
+        document.write('<b>Pergunta 01: Errado</b><br>')
+        break;
+        
+        case '3':
+        console.log('<b>Pergunta 01: Certo</b>');
+        document.write('<b>Pergunta 01: Certo</b><br>')
+        resposta01 = 1;
+        break;
+
+    case '4':
+        console.log('<b>Pergunta 01: Errado</b>');
+        document.write('<b>Pergunta 01: Errado</b><br>')
+        break;
+
+        
+}
+
+
+switch(p2){
+
+    case '1':
+        console.log('<b>Pergunta 02: Errado</b>');
+        document.write('<b>Pergunta 02: Errado</b><br>')
+        break;
+
+        case '2':
+        console.log('<b>Pergunta 02: Certo</b>');
+        document.write('<b>Pergunta 02: Certo</b><br>')
+        break;
+        
+        case '3':
+        console.log('<b>Pergunta 02: Errado</b>');
+        document.write('<b>Pergunta 02: Errado</b><br>')
+        break;
+
+    case '4':
+        console.log('<b> Pergunta 02: Errado</b>');
+        document.write('<b>Pergunta 02: Errado</b><br>')
+        break; 
+
+}
+
+
+switch(p3){
+
+case '1':
+    console.log('<b>Pergunta 03: Errado</b>');
+    document.write('<b>Pergunta 03: Errado</b><br>')
+    break;
+
+    case '2':
+    console.log('<b>Pergunta 03: Certo</b>');
+    document.write('<b>Pergunta 03: Certo</b><br>')
+    break;
+    
+    case '3':
+    console.log('<b>Pergunta 03: Errado</b>');
+    document.write('<b>Pergunta 03: Errado</b><br>')
+    break;
+
+case '4':
+    console.log('<b> Pergunta 03: Errado</b>');
+    document.write('<b>Pergunta 03: Errado</b><br>')
+    break; 
+
+}
+
+switch(p4){
+
+case '1':
+    console.log('<b>Pergunta 04: Errado</b>');
+    document.write('<b>Pergunta 04: Errado</b><br>')
+    break;
+
+    case '2':
+    console.log('<b>Pergunta 04 Errado</b>');
+    document.write('<b>Pergunta 04: Errado</b><br>')
+    break;
+    
+    case '3':
+    console.log('<b>Pergunta 04: Errado</b>');
+    document.write('<b>Pergunta 04: Errado</b><br>')
+    break;
+
+case '4':
+    console.log('<b> Pergunta 04: Certo</b>');
+    document.write('<b>Pergunta 04: Certo</b><br>')
+    break; 
+
+}
+
+switch(p5){
+
+case '1':
+    console.log('<b>Pergunta 05: Certo</b>');
+    document.write('<b>Pergunta 05: Certo</b><br>')
+    break;
+
+    case '2':
+    console.log('<b>Pergunta 05: Errado</b>');
+    document.write('<b>Pergunta 05: Errado</b><br>')
+    break;
+    
+    case '3':
+    console.log('<b>Pergunta 05: Errado</b>');
+    document.write('<b>Pergunta 05: Errado</b><br>')
+    break;
+
+case '4':
+    console.log('<b> Pergunta 05: Errado</b>');
+    document.write('<b>Pergunta 05: Errado</b><br>')
+    break; 
+
+
+
+}
+
+let pontos =p1+p2+p3+p4
+
+</script>

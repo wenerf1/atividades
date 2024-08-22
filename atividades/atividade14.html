@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nome{
+            background-color: rgb(5, 75, 155);
+            width: 150px;
+            height: 50px;
+            font-size: 30px;
+            color: aliceblue;
+            border-radius: 10px;
+        }
+        #container{
+            display: block;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="nomeport"class = 'nome'></div>
+        <div id="nomeing"class = 'nome'></div>
+        <img id="imagem" src="imagem/frutas/maca.jpg" alt="">
+
+
+
+
+    </div>
+    <script>
+        /* Crie um programa em JavaScript que:
+        
+        1.Solicite ao usuario que digite o nome de uma fruta -ok
+        
+        2.Após o Usuario digitar o nome, o programa deve:
+        *Exibir o nome da fruta em portugues e em ingles.
+        *Mostrar uma imagem Correspondente à fruta
+        
+        */
+    
+        let nomeDigitado = prompt('Digite o nome de uma fruta');
+        if (nomeDigitado == 'maca'){
+            document.getElementById('nomeport').textContent='Maçã'
+            document.getElementById('nomeing').textContent='Apple'
+            document.getElementById('imagem').src='frutas/maca.jpg'
+        } else if (nomeDigitado == 'abacaxi'){
+            document.getElementById('nomeport').textContent='Abacaxi'
+            document.getElementById('nomeing').textContent='Pineapple'
+            document.getElementById('imagem').src='frutas/abacaxi.jpg'
+        } else if (nomeDigitado == 'caixa'){
+            document.getElementById('nomeport').textContent='Caixa'
+            document.getElementById('nomeing').textContent='Box'
+            document.getElementById('imagem').src='frutas/caixa.jpg'
+        }else if (nomeDigitado == 'banana'){
+            document.getElementById('nomeport').textContent='Banana'
+            document.getElementById('nomeing').textContent='Banana'
+            document.getElementById('imagem').src='frutas/banana.jpg'
+        }else if (nomeDigitado == 'caqui'){
+            document.getElementById('nomeport').textContent='Caqui'
+            document.getElementById('nomeing').textContent='Khaki'
+            document.getElementById('imagem').src='frutas/caqui.jpg'
+        }else if (nomeDigitado == 'coco'){
+            document.getElementById('nomeport').textContent='Coco'
+            document.getElementById('nomeing').textContent='Coconut'
+            document.getElementById('imagem').src='frutas/coco.jpg'
+        }else if (nomeDigitado == 'mamao'){
+            document.getElementById('nomeport').textContent='Mamão'
+            document.getElementById('nomeing').textContent='Papaya'
+            document.getElementById('imagem').src='frutas/mamao.jpg'
+        }else if (nomeDigitado == 'manga'){
+            document.getElementById('nomeport').textContent='Manga'
+            document.getElementById('nomeing').textContent='Mango'
+            document.getElementById('imagem').src='frutas/manga.jpg'
+        }else if (nomeDigitado == 'melancia'){
+            document.getElementById('nomeport').textContent='Melancia'
+            document.getElementById('nomeing').textContent='Watermelon'
+            document.getElementById('imagem').src='frutas/melancia.png'
+        }else if (nomeDigitado == 'melao'){
+            document.getElementById('nomeport').textContent='Melão'
+            document.getElementById('nomeing').textContent='Melon'
+            document.getElementById('imagem').src='frutas/melao.jpg'
+        }else if (nomeDigitado == 'morango'){
+            document.getElementById('nomeport').textContent='Morango'
+            document.getElementById('nomeing').textContent='Strawberry'
+            document.getElementById('imagem').src='frutas/morango.png'
+        }else if (nomeDigitado == 'pera'){
+            document.getElementById('nomeport').textContent='Pera'
+            document.getElementById('nomeing').textContent='Pear'
+            document.getElementById('imagem').src='frutas/pera.jpg'
+        }else if (nomeDigitado == 'tangerina'){
+            document.getElementById('nomeport').textContent='Tangerina'
+            document.getElementById('nomeing').textContent='Tangerine'
+            document.getElementById('imagem').src='frutas/tangerina.jpg'
+        }else if (nomeDigitado == 'uva'){
+            document.getElementById('nomeport').textContent='Uva'
+            document.getElementById('nomeing').textContent='Grape'
+            document.getElementById('imagem').src='frutas/uva.jpg'
+        }
+
+        
+    
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>

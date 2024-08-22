@@ -1,0 +1,76 @@
+<script>
+
+    // Crie um programa que solicite um numero entre 1 a 12 ao usuario, e exiba uma na pagina qual mês corresponde o numero, use a condicional switch. Observação, se o usuario digitar 12 deve aparecer também uma imagem do papai Noel na pagina. imprima no console comforme abaixo:
+
+
+    let numeroDoMes = prompt('Digite um número de 1 a 12');
+
+
+    if (isNaN(numeroDoMes) || numeroDoMes < 1 || numeroDoMes > 12) {
+        console.log('Você não digitou nenhum número entre 1 e 12')
+        alert('Você não digitou nenhum número entre 1 e 12')
+    }
+
+    switch (numeroDoMes) {
+
+        case '1':
+            console.log('<b>Janeiro</b>');
+            document.write('<b>Janeiro</b>')
+            break;
+        case '2':
+            console.log('<b>Fevereiro</b>');
+            document.write('<b>Fevereiro</b>')
+            break;
+        case '3':
+            console.log('<b>Março</b>');
+            document.write('<b>Março</b>')
+            break;
+        case '4':
+            console.log('<b>Abril</b>');
+            document.write('<b>Abril</b>')
+            break;
+        case '5':
+            console.log('<b>Maio</b>');
+            document.write('<b>Maio</b>')
+            break;
+        case '6':
+            console.log('<<b>Junho</b>');
+            document.write('<b>Junho</b>')
+            break;
+        case '7':
+            console.log('<b>Julho</b>');
+            document.write('<b>Julho</b>')
+            break;
+        case '8':
+            console.log('<b>Agosto</b>');
+            document.write('<b>Agosto</b>')
+            break;
+        case '9':
+            console.log('<b>Setembro</b>');
+            document.write('<b>Setembro</b>')
+            break;
+        case '10':
+            console.log('<b>Outubro</b>');
+            document.write('<b>Outubro</b>')
+            break;
+        case '11':
+            console.log('<b>Novembro</b>');
+            document.write('<b>Novembro</b>')
+            break;
+        case '12':
+            console.log('<b>Dezembro</b>');
+            document.write('<b><font color="Red">Dezembro</b></font><br>')
+            document.write('<img src = "https://res.cloudinary.com/teepublic/image/private/s--PfIxMjAx--/t_Preview/b_rgb:191919,c_limit,f_auto,h_630,q_90,w_630/v1600069558/production/designs/14005735_0.jpg">')
+           
+            break;
+
+
+
+
+
+
+
+    }
+
+
+</script>
